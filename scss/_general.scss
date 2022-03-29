@@ -1,0 +1,15 @@
+// основные стили
+
+$kurale:'Kurale', serif;
+$os:'Open Sans', sans-serif;
+
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+body{
+    font-family: $os;
+    background-color: #000;
+}

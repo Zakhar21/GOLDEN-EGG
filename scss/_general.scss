@@ -1,15 +1,45 @@
-// основные стили
 
+//Шрифты
 $kurale:'Kurale', serif;
 $os:'Open Sans', sans-serif;
 
+//Цвета
+$white:#fff;
+$yellow:#e8c300;
+$black:#000;
+$light-gray:rgba(51, 51, 51, 0.5);
 
-*,
-*::before,
-*::after{
-    box-sizing: border-box;
+
+// размеры, отступы и пр
+$wrap:1470px;
+$container:1200px;
+$mc:0 auto;
+$fontSize:18px;
+
+
+//Миксины
+@mixin flex($jc, $ai){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: $jc;
+    align-items: $ai;
 }
+
+
+
+
 body{
+    background-color: $white;
     font-family: $os;
-    background-color: #000;
+    color:$black;
+    font-size:$fontSize;
+}
+.wrapper{
+    max-width: $wrap;
+    margin: $mc;
+    padding: 0 15px;
+}
+.container{
+    max-width: $container;
+    margin: $mc;
 }

@@ -1,6 +1,9 @@
 .home{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
     min-height: 800px;
-    outline: 1px solid red;
     position: relative;
 
     &__img,
@@ -54,4 +57,86 @@
         position: relative;
         top:15px; // чтобы не тянул всё меню за собой
     }
+}
+.home__container-center{
+    @include flex(space-between, flex-start);
+    margin-top: 175px;
+}
+.socials{
+    width: 62px;
+    margin-top: 40px;
+    a{
+        display: block;
+        width: 62px;
+        height: 62px;
+        border-radius: 50%;
+        transition: .3s;
+        margin-bottom: 20px;
+        &:hover{
+            background-color: $yellow;
+        }
+    }
+}
+.home__text{
+    text-align: center;
+    h6{
+        color:$white;
+        text-transform: uppercase;
+        font-size: $fontSize;
+        margin-bottom: 25px;
+    }
+    h1{
+        color:$yellow;
+        font-family: $kurale;
+        font-size: 72px;
+
+        &::after{
+            @include line;
+        }
+    }
+}
+.home__btns{
+    margin-bottom: 80px;
+    a{
+        display: inline-block;
+        width: 200px;
+        height: 60px;
+        line-height: 60px;
+        font-size: 12px;
+        font-weight: 700;
+        border-radius: 5px;
+        text-transform: uppercase;
+        transition: .3s;
+        border:1px solid $light-white;
+        color:$white;
+        margin-bottom: 20px;
+        &:not(:last-child){
+            margin-right: 40px;
+        }
+        &:hover{
+            background-color: $yellow;
+        }
+    }
+    .btn-order{
+        background-color: $yellow;
+        border: transparent;
+
+        &:hover{
+            background-color: darken($yellow, 5);
+        }
+    }
+}
+.arrow__about{
+    display: block;
+    width: 62px;
+    height: 62px;
+    margin: $mc;
+}
+.time-work{
+    font-weight: 700;
+    font-size: 12px;
+    color: $white;
+    transform: rotate(-90deg);
+    margin-top: 140px;
+    margin-left: -70px;
 }

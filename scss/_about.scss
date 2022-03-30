@@ -1,0 +1,25 @@
+.about{
+    padding: 95px 0 105px 0;
+
+    &__container{
+        @include flex(space-between, center);
+    }
+}
+.about__text{
+    width: 50%;
+    max-width: 600px;
+    text-align: center;
+}
+.about__img{
+    width: 50%;
+    max-width: 500px;
+    position: relative;
+
+    .circle{
+        right: 0;
+        transform: translate(40%, -50%);
+    }
+    img{
+        @include img;
+    }
+}

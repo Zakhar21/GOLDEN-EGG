@@ -92,6 +92,7 @@ section h2{
     font-family: $kurale;
     font-size: 42px;
     font-weight: 400;
+    text-transform: uppercase;
 
     &::after{
         @include line;

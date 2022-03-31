@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::before,
 *::after {
@@ -25,6 +26,23 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #000;
   font-size: 18px;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  /* ширина scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #e8c300;
+  /* цвет дорожки */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  /* цвет плашки */
+  border-radius: 20px;
+  /* закругления плашки */
 }
 
 .wrapper {
@@ -528,6 +546,8 @@ section p {
   border-radius: 5px;
   width: 100%;
   height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .team {
@@ -586,5 +606,7 @@ section p {
   border-radius: 5px;
   width: 100%;
   height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=style.css.map */

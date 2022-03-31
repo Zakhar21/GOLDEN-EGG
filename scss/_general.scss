@@ -9,7 +9,8 @@ $light-white:rgba(255, 255, 255, 0.5);
 $yellow:#e8c300;
 $black:#000;
 $light-gray:rgba(51, 51, 51, 0.5);
-
+$gray-opacity:rgba(51, 51, 51, 0.5);
+$form-color:#e5e5e5;
 
 // размеры, отступы и пр
 $wrap:1440px;
@@ -55,7 +56,7 @@ body{
     font-size:$fontSize;
 }
 body::-webkit-scrollbar {
-    width: 10px;               /* ширина scrollbar */
+    width: 12px;               /* ширина scrollbar */
   }
   body::-webkit-scrollbar-track {
     background: $yellow;        /* цвет дорожки */

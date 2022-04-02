@@ -1,0 +1,59 @@
+.spec__container{
+    position: relative;
+    h6{
+        color:$white;
+        font-size: 12px;
+        text-align: center;
+        letter-spacing: .5;
+        position: absolute;
+        z-index: 100;
+        text-transform: uppercase;
+        width: 100%;
+        top:45px;
+    }
+}
+.spec__slide{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/bg-slide.png) center/cover no-repeat;
+    padding: 105px 0 95px 0;
+}
+.spec__slide-container{
+    @include flex(space-between, center);
+}
+.spec__text{
+    color:$white;
+    text-align: center;
+    width: 50%;
+    max-width: 600px;
+    padding-left: 30px;
+}
+.spec__img{
+    width: 50%;
+    max-width: 500px;
+    position: relative;
+    text-align: right;
+    @include img;
+
+    .circle{
+        left: 0;
+        transform: translate(-30%, -50%);
+    }
+}
+.spec__pagination{
+    @include flex(center, center);
+    gap:20px;
+    width: 100%;
+    bottom: 45px;
+    z-index: 2;
+    position: absolute;
+}
+.swiper-pagination-bullet{
+    width: 10px;
+    height: 10px;
+    background-color: $white;
+    opacity: .5;
+    border-radius: 50%;
+}
+.swiper-pagination-bullet-active{
+    background-color: $white;
+    opacity: 1;
+}

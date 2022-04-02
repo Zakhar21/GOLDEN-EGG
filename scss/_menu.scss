@@ -1,0 +1,43 @@
+.menu{
+    padding: 70px 0 75px;
+
+    h2{
+        text-align: center;
+    }
+    &__intro{
+        max-width: 565px;
+        text-align: center;
+        margin: $mc;
+    }
+}
+.tabs__container{
+    margin: 45px auto 55px;
+    position: relative;
+    height: 60px;
+    max-width: $container;
+    outline: 1px solid red;
+}
+.tabs{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    @include flex(center, center);
+    flex-wrap: nowrap;
+
+    &__item{
+        min-width: 163px;
+        cursor: pointer;
+        padding: 0 10px;
+        transition: .3s;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color:$tabs-color;
+        height: 47px;
+        @include flex(center, center);
+
+        &:not(:last-child){
+            border-right: 1px solid $tabs-color;
+        }
+    }
+}

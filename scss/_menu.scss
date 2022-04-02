@@ -15,7 +15,15 @@
     position: relative;
     height: 60px;
     max-width: $container;
-    outline: 1px solid red;
+    overflow-y: hidden;
+    overflow-x: auto;
+    &::-webkit-scrollbar{
+        height: 8px;
+        background-color: $tabs-color;
+    }
+    &::-webkit-scrollbar-thumb{
+        background-color: $yellow;
+    }
 }
 .tabs{
     position: absolute;
@@ -35,9 +43,16 @@
         color:$tabs-color;
         height: 47px;
         @include flex(center, center);
-
-        &:not(:last-child){
-            border-right: 1px solid $tabs-color;
+        &:hover,
+        &.active{
+            background-color: $yellow;
         }
+        &:not(:last-child){
+            border-right: 1px solid $tabs-color-opacity;
+        }
+    }
+    &.overflow{
+        left: 0;
+        transform: none;
     }
 }

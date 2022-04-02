@@ -892,7 +892,17 @@ section p {
   position: relative;
   height: 60px;
   max-width: 1230px;
-  outline: 1px solid red;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+
+.tabs__container::-webkit-scrollbar {
+  height: 8px;
+  background-color: #333;
+}
+
+.tabs__container::-webkit-scrollbar-thumb {
+  background-color: #e8c300;
 }
 
 .tabs {
@@ -939,7 +949,17 @@ section p {
           align-items: center;
 }
 
+.tabs__item:hover, .tabs__item.active {
+  background-color: #e8c300;
+}
+
 .tabs__item:not(:last-child) {
-  border-right: 1px solid #333;
+  border-right: 1px solid rgba(51, 51, 51, 0.5);
+}
+
+.tabs.overflow {
+  left: 0;
+  -webkit-transform: none;
+          transform: none;
 }
 /*# sourceMappingURL=style.css.map */

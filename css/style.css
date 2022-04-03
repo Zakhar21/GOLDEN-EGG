@@ -962,4 +962,126 @@ section p {
   -webkit-transform: none;
           transform: none;
 }
+
+.menu__sliders {
+  position: relative;
+  max-width: 1230px;
+  margin: 0 auto;
+  overflow: hidden;
+  height: 500px;
+}
+
+.menu__slider {
+  height: 100%;
+}
+
+.menu__slider-block {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.menu__slider-block.show {
+  opacity: 1;
+  z-index: 2;
+}
+
+.menu__item {
+  max-width: 510px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu__item-img {
+  width: 260px;
+  height: 170px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 4px solid #e8c300;
+}
+
+.menu__item-text {
+  max-width: 220px;
+  margin-left: 25px;
+}
+
+.menu__title,
+.menu__price {
+  font-family: "Kurale", serif;
+  font-size: 18px;
+  color: #333;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.menu__title {
+  display: inline-block;
+  border-bottom: 1px solid #333;
+}
+
+.menu__descr {
+  font-size: 12px;
+  color: rgba(51, 51, 51, 0.5);
+  margin-top: 24px;
+  line-height: 14px;
+}
+
+.menu__slider .swiper-slide {
+  max-height: 175px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu__slider .swiper-wrapper {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.menu__pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  width: 100%;
+  position: absolute;
+  z-index: 3;
+  bottom: 0;
+}
+
+.menu__pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(51, 51, 51, 0.5);
+  border-radius: 50%;
+}
+
+.menu__pagination .swiper-pagination-bullet-active {
+  background-color: #e8c300;
+  opacity: 1;
+}
 /*# sourceMappingURL=style.css.map */

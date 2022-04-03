@@ -533,6 +533,56 @@
             </div>
         </section>
 
+        <section class="contacts" id="contacts">
+            <h2>Контакты</h2>
+            <p class="intro contacts__intro">
+                Вы можете оставить нам сообщение через форму ниже, или любым другим, удобным вам способом
+            </p>
+            <form action="#" class="conatiner contacts__form">
+                <input type="text" placeholder="Имя" required>
+                <input type="email" placeholder="Email" required>
+                <input type="tel" placeholder="Телефон" required>
+                <textarea placeholder="Сообщение"></textarea>
+
+                <div class="contacts__data-submit">
+                    <div class="contacts__data">
+
+                        <div class="contacts__data-item">
+                            <svg>
+                                <use xlink:href = "img/sprite-icons.svg#map"></use>
+                            </svg>
+                            <span>пр-т. Победы, 105, Мариуполь</span>
+                        </div>
+
+                        <div class="contacts__data-item">
+                            <svg>
+                                <use xlink:href = "img/sprite-icons.svg#phone"></use>
+                            </svg>
+                            <a href="tel:380987291367">+38098 729 13 67</a>
+                        </div>
+
+                        <div class="contacts__data-item">
+                            <svg>
+                                <use xlink:href = "img/sprite-icons.svg#email"></use>
+                            </svg>
+                            <a href="mailto:info@goldenegg.com">info@goldenegg.com</a>
+                        </div>
+
+                    </div>
+                    <button type="submit" class="contacts__submit">
+                        Отправить сообщение
+                    </button>
+                </div>
+            </form>
+        </section>
+
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21781.144635097873!2d82.84306764622123!3d54.98255430915087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42dfe0d0d2ade12b%3A0xd67ed5bf8ee00a12!2z0JrQvtC90YLQuNC90LXQvdGC!5e0!3m2!1sru!2sru!4v1648976351292!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <footer class="footer">
+            &copy; Copyright <a href="https://github.com/Zakhar21" target="_blank">Zakhar</a> 2022
+        </footer>
+
     </div><!-- wrapper -->
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <!-- <script src="js/_swiper-bundle.min.js"></script> -->

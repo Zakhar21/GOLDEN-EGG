@@ -406,6 +406,13 @@ section p {
 @media screen and (max-width: 1080px) {
   .top-menu__item a {
     font-size: 18px;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .top-menu__item {
+    padding-bottom: 30px;
   }
 }
 
@@ -416,6 +423,15 @@ section p {
 .logo img {
   position: relative;
   top: 15px;
+}
+
+@media screen and (max-width: 1080px) {
+  .logo {
+    padding-bottom: 30px;
+  }
+  .logo img {
+    top: 0;
+  }
 }
 
 .home__container-center {

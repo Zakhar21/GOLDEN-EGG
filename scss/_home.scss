@@ -69,7 +69,11 @@
 
         @media screen and (max-width:1080px) {
             font-size: 18px;
+            padding: 0;
         }
+    }
+    @media screen and (max-width:1080px){
+        padding-bottom: 30px;
     }
 }
 .logo{
@@ -77,6 +81,13 @@
     img{
         position: relative;
         top:15px; // чтобы не тянул всё меню за собой
+    }
+    @media screen and (max-width:1080px){
+        padding-bottom: 30px;
+
+        img{
+            top:0;
+        }
     }
 }
 .home__container-center{

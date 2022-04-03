@@ -31,6 +31,23 @@
 }
 .top-menu__list{
     @include flex(center, center);
+    @media screen and (max-width:1080px) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        background: $black;
+        height: 100vh;
+        z-index: 10;
+        transition: .3s;
+    }
+    &.is-active{
+        @media screen and (max-width:1080px){
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        }
+    }
 }
 .top-menu__item{
     margin: 0 5px;
@@ -48,6 +65,10 @@
         &:hover{
             color:$yellow;
             border-top: 5px solid $yellow;
+        }
+
+        @media screen and (max-width:1080px) {
+            font-size: 18px;
         }
     }
 }
@@ -140,4 +161,15 @@
     margin-top: 60px;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
+}
+
+.mobile{
+    padding: 20px 20px 0;
+    display: none;
+    @media screen and (max-width:1080px){
+        @include flex(space-between, center);
+    }
+    .hamburger-mobile{
+        z-index: 11;
+    }
 }

@@ -59,3 +59,22 @@ function overflowInnerTabs(){
   }
 }
 
+let burger = document.querySelector('.hamburger');
+let menuList = document.querySelector('.top-menu__list');
+let animateburger = document.querySelector('.hamburger--squeeze');
+
+
+burger.addEventListener('click', () => {
+  menuList.classList.toggle('is-active');
+  animateburger.classList.toggle('is-active');
+  
+});
+
+// Закрывать меню при скролле
+let sizeOver = 100;
+window.addEventListener('scroll', () => {
+  if(window.scrollY > sizeOver){
+    menuList.classList.remove('is-active');
+    animateburger.classList.remove('is-active');
+  }
+});

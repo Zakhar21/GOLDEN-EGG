@@ -3,7 +3,7 @@
     top:0;
     left: 0;
     width: 100%;
-    min-height: 800px;
+    min-height: 899px;
     position: relative;
 
     &__img,
@@ -47,6 +47,10 @@
         @media screen and (max-width:1080px){
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
         }
+    }
+    @media screen and (max-height:500px){
+        overflow-y: scroll;
+        flex-wrap: nowrap;
     }
 }
 .top-menu__item{
@@ -93,6 +97,11 @@
 .home__container-center{
     @include flex(space-between, flex-start);
     margin-top: 175px;
+    @media screen and (max-width:690px){
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+    }
 }
 .socials{
     width: 62px;
@@ -107,6 +116,12 @@
         &:hover{
             background-color: $yellow;
         }
+    }
+    @media screen and (max-width:690px){
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap:50px;
     }
 }
 .home__text{
@@ -124,6 +139,9 @@
 
         &::after{
             @include line;
+        }
+        @media screen and (max-width:690px){
+            font-size: 47px;
         }
     }
 }
@@ -148,6 +166,9 @@
         &:hover{
             background-color: $yellow;
         }
+        @media screen and (max-width:690px){
+            width: 100%;
+        }
     }
     .btn-order{
         background-color: $yellow;
@@ -156,6 +177,9 @@
         &:hover{
             background-color: darken($yellow, 5);
         }
+    }
+    @media screen and (max-width:690px){
+        margin-bottom: 40px;
     }
 }
 .arrow__about{
@@ -172,6 +196,13 @@
     margin-top: 60px;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
+    @media screen and (max-width:690px){
+        writing-mode: initial;
+        width: 100%;
+        transform: rotate(0deg);
+        text-align: center;
+        margin-bottom: 30px;
+    }
 }
 
 .mobile{

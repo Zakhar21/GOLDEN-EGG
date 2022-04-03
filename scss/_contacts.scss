@@ -43,3 +43,65 @@
         padding: 20px;
     }
 }
+.contacts__data-submit{
+    @include flex(space-between, center);
+    width: 100%;
+    padding: 0 8px;
+
+    button{
+        width: 50%;
+        max-width: 580px;
+        background-color: $yellow;
+        text-transform: uppercase;
+        height: 60px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        color:$white;
+        font-weight: 700;
+        font-size: 12px;
+        transition: .3s;
+
+        &:hover{
+            background-color: darken($yellow, 10);
+        }
+    }
+}
+.contacts__data{
+    @include flex(flex-start, center);
+}
+.contacts__data-item{
+    @include flex(flex-start, center);
+    font-size: 12px;
+    font-weight: 700;
+    color: $gray-opacity;
+    margin-right: 20px;
+
+    a{
+        color:inherit;
+    }
+    svg{
+        width: 14px;
+        height: 14px;
+        margin-right: 5px;
+    }
+}  
+
+.map{
+    width: 100%;
+    height: 475px;
+    iframe{
+        width: 100%;
+        height: 100%;
+    }
+}
+.footer{
+    text-align: center;
+    background-color: $black;
+    color:$light-white;
+    font-size: 12px;
+    padding: 10px;
+    a{
+        color:inherit;
+    }
+}

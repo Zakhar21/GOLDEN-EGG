@@ -68,8 +68,8 @@ body::-webkit-scrollbar {
     border-radius: 20px;       /* закругления плашки */
   }
 .wrapper{
-    max-width: $wrap;
     margin: $mc;
+    overflow-x: hidden;
 }
 .container{
     max-width: $container;

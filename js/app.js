@@ -16,6 +16,12 @@ const swiperMenu = new Swiper('.menu__slider', {
   grid: {
     rows: 2,
   },
+  breakpoints:{
+    320:{
+      slidesPerView:1,
+      slidesPerColumn:1,
+    },
+  },
 
 
   // If we need pagination

@@ -1,6 +1,7 @@
 const swiper = new Swiper('.spec__swiper', {
     // Optional parameters
     loop: true,
+    autoHeight: true,
   
     // If we need pagination
     pagination: {
